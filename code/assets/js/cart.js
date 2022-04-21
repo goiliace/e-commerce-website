@@ -9,13 +9,16 @@ $(document).ready(function() {
         })
         $('.product_total_price_value h4').html(new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(total));
     }
-
+    $('.have_items__wrapper').css('display', 'none')
+    $('.no_items__wrapper').css('display', 'block')
     var cart = JSON.parse(localStorage.getItem('cart'))
-    if (cart.length == 0 || cart == null) {
+    if (cart == null) {
         $('.have_items__wrapper').css('display', 'none')
         $('.no_items__wrapper').css('display', 'block')
         console.log(cart);
     } else {
+        $('.have_items__wrapper').css('display', 'block')
+        $('.no_items__wrapper').css('display', 'none')
         cart.forEach(e => {
             $('#producItems').append(
                 `<div class="product_item  mb-4">
@@ -92,5 +95,42 @@ $(document).ready(function() {
         } else {
             alert('Không được bé hơn 1')
         }
+    });
+    // xu ly thanh toán
+    var user_now = JSON.parse(localStorage.getItem('user_now'))
+    if (user_now == null) {
+        $(".modal-body").html("Bạn cần đăng nhập để mua hàng");
+        $('#goto-SignIn').css('display', 'block');
+        $('#done-update').css('display', 'none');
+    } else {
+        $('#goto-SignIn').css('display', 'none');
+        $('#done-update').css('display', 'block');
+        $('#address').attr('value', user_now.address);
+        $('#phone').attr('value', user_now.phone);
+        $('#email').attr('value', user_now.email);
+        $('#done').click(function() {
+            var address = $('#address').val();
+            var phone = $('#phone').val();
+            var email = $('#email').val();
+            var cart = JSON.parse(localStorage.getItem('cart'))
+            var total = $('.product_total_price_value h4').val().replace(/\D/g, '');
+            var total = 0;
+            var order = {
+                address: address,
+                phone: phone,
+                email: email,
+                total: total,
+                cart: cart
+            }
+            console.log(order);
+            alert("Đặt hàng thành công");
+            localStorage.setItem('order', JSON.stringify(order))
+            localStorage.removeItem('cart')
+            location.reload();
+        });
+
+    }
+    $('#payment-modal').on('shown.bs.modal', function() {
+        $('#myInput').focus()
     });
 })

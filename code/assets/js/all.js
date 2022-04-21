@@ -12,7 +12,7 @@ const header = `<nav class="navbar navbar-expand-md">
             <a class="nav-link" href="./index.html">Trang chủ</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link position-relative" href="./shop-new.html">Sản phẩm</a>
+            <a class="nav-link position-relative" href="#">Sản phẩm</a>
             <ul class="sub-menu bg-light">
                 <li><a class="nav-link" href="./shop-new.html">Sản phẩm mới</a></li>
                 <li> <a class="nav-link  " href="./shop-women.html">Women</a></li>

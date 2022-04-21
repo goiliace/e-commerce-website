@@ -169,11 +169,11 @@
                                     <h4>100.770.000 ₫</h4>
                                 </div>
                             </div>
-                            <div class="product_payment">
+                            <div class="product_payment" data-toggle="modal" data-target="#payment-modal">
                                 <a href="#" class="m-0">Thanh toán ngay</a>
                             </div>
                             <div class="product_payment mt-2">
-                                <a href="#" class=" m-0">Tiếp tục mua sắm</a>
+                                <a href="./shop-new.html" class=" m-0 px-3">Tiếp tục mua sắm</a>
                             </div>
                         </div>
                     </div>
@@ -189,6 +189,53 @@
         </div>
         <div class="footer-area" id="footer">
 
+        </div>
+    </div>
+    <div class="modal fade" id="payment-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="user-name">Địa chỉ giao hàng</label>
+                            <input type="text" class="form-control" id="address" value="" placeholder="Nhập địa chỉ giao hàng">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-phone">Số điện thoại</label>
+                            <input type="text" class="form-control" id="phone" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-email">Email</label>
+                            <input type="text" class="form-control" id="email" value="">
+                        </div>
+
+                        <div class="form-group">
+                            <p>Hình thức thanh toán</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cash" value="option1">
+                                <label class="form-check-label" for="cash">
+                                    <i class="mx-1 fa fa-money" aria-hidden="true"></i>
+                                    Thanh toán khi nhận hàng</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="atm" value="option2">
+                                <label class="form-check-label" for="atm"><i class="mx-1 fa fa-credit-card-alt" aria-hidden="true"></i> Thanh toán ngay</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="./signin.html" id="goto-SignIn">Đến trang đăng nhập</a>
+                    <button type="button" class="btn" id="done" data-dismiss="modal">Thanh toán</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
