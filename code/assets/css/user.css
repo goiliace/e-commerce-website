@@ -1,0 +1,130 @@
+body {}
+
+.container {
+    padding: 120px 0;
+}
+
+.no-user,
+.user_about__wrapper,
+.user_wrapper {
+    min-height: 500px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.no-user,
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.no-user-img,
+.user_img__wrapper {
+    width: 200px;
+}
+
+.no-user-img img,
+.user_img__wrapper img {
+    max-width: 100%;
+}
+
+.user_info h1 {
+    font-weight: 300;
+}
+
+.box_content {
+    margin-top: 50px;
+}
+
+.item_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 30px;
+    /* aspect-ratio: 1 / 1; */
+    height: 100%;
+    border-radius: 20px;
+}
+
+.item_content_img {
+    width: 100px;
+    height: 100px;
+}
+
+.item_content_img img {
+    width: 100%;
+}
+
+.item-content__detail {
+    background: #fff;
+}
+
+.item_content__title {
+    color: #bc3a02;
+    font-size: 22px;
+    font-weight: 500;
+    margin: .5rem 0 0;
+}
+
+.item-content__detail {
+    margin-top: 8px;
+}
+
+.blue_light {
+    background-color: #deeaf2 !important;
+}
+
+.green_light {
+    background-color: #dff0d8 !important;
+}
+
+.yellow_light {
+    background-color: #fcf8e3 !important;
+}
+
+.user_about__wrapper {
+    margin-top: 50px;
+}
+
+.user_about__title {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.user_about__content .user_about__content__item {
+    text-align: center;
+}
+
+.user_about__content .user_about__content__item img {
+    width: 120px;
+}
+
+.user_about__content__item__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.user_setting__content__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.user_setting__content__item img {
+    width: 60px;
+    margin: 0 40px;
+}
+
+.user_setting__content__item__title {
+    font-size: 20px;
+    font-weight: 500;
+}

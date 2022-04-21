@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/fonts/material-icon/css/material-design-iconic-font.css">
+    <script src="../assets/js/signin.js"></script>
+    <link rel="stylesheet" href="../assets/css/signin.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container right-panel-active ">
+        <!-- Đăng kíz -->
+        <div class="container__form container--signup">
+            <form action="" class="form" id="form1">
+                <h2 class="form__title">Đăng kí</h2>
+                <div class="form-group">
+                    <input type="text" placeholder="Họ và tên" class="input" name="name" id="name-signup" />
+                    <div class="check text-success d-none" id="t-name">
+                        <i class=" zmdi zmdi-check-circle"></i>
+                    </div>
+                    <div class="check text-danger d-none" id="f-name">
+                        <i class=" zmdi zmdi-close-circle"></i>
+                        <span class="notification bg-danger" id="f-name-1">Ít nhất 3 kí tự</span>
+                        <span class="notification bg-danger" id="f-name-2">Tên phải viết hoa không dấu</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="phone" placeholder="Số điện thoại" class="input " name="phone" id="phone-signup" />
+                    <div class="check text-success d-none" id="t-phone">
+                        <i class=" zmdi zmdi-check-circle"></i>
+                    </div>
+                    <div class="check text-danger d-none" id="f-phone">
+                        <i class=" zmdi zmdi-close-circle"></i>
+                        <span class="notification bg-danger">Định dạng chưa hợp lệ</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" class="input " name="email" id="email-signup" />
+                    <div class="check text-success d-none" id="t-email">
+                        <i class=" zmdi zmdi-check-circle"></i>
+                    </div>
+                    <div class="check text-danger d-none" id="f-email">
+                        <i class=" zmdi zmdi-close-circle"></i>
+                        <span class="notification bg-danger">Định dạng chưa hợp lệ</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Mật khẩu" class="input" name="password" id="password-signup" />
+                    <div class="check text-success d-none" id="t-Spass">
+                        <i class=" zmdi zmdi-check-circle"></i>
+                        <span class="notification bg-success ">Mạnh</span>
+                    </div>
+                    <div class="check text-warning d-none" id="t-Mpass">
+                        <i class="zmdi zmdi-alert-triangle"></i>
+                        <p class="notification bg-warning">Trung bình</p>
+                    </div>
+                    <div class="check text-danger d-none" id="f-pass">
+                        <i class=" zmdi zmdi-close-circle"></i>
+                        <span class="notification bg-danger">Yếu</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Nhập lại mật khẩu" class="input" name="confirm-password" id="confirm-password-signup" />
+                    <div class="check text-success d-none" id="t-repass">
+                        <i class=" zmdi zmdi-check-circle"></i>
+                    </div>
+                    <div class="check text-danger d-none" id="f-repass">
+                        <i class=" zmdi zmdi-close-circle"></i>
+                    </div>
+                </div>
+                <button type="button" data-target="#signInModal" data-toggle="modal" class="btn" id="dangki">Đăng kí</button>
+                <div class="overlay__panel">
+                    <p id="signIn" style="cursor: pointer;">Đã có tài khoản? Đăng nhập ngay</p>
+                </div>
+            </form>
+        </div>
+        <div class="container__form container--signin">
+            <form class="form" id="form2">
+                <h2 class="form__title">Đăng nhập</h2>
+                <div class="form-group">
+                    <input type="text" placeholder="Email hoặc số điện thoại" class="input" id="name-signin" />
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Mật khẩu" class="input" id="password-signin" />
+                </div>
+                <a href="#" class="link">Forgot your password?</a>
+                <button type="button" data-target="#signInModal" data-toggle="modal" class="btn" targe id="dangnhap">Đăng nhập</button>
+                <p id="signUp" style="cursor: pointer;">Chưa có tài khoản? Đăng kí ngay</p>
+            </form>
+        </div>
+    </div>
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <a href="./index.html" class="btn" id="backHome">Về trang chủ</a>
+                    <button type="button" class="btn" id="goSignUp" data-dismiss="modal">Đến trang đăng nhập</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

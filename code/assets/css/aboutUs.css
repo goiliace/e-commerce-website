@@ -1,0 +1,47 @@
+:root {
+    --main-color-light: #fd866e;
+    --main-color-dark: #f5411d;
+}
+
+.user-content {
+    padding-top: 120px;
+    min-height: fit-content;
+}
+
+.user-item {
+    font-family: Verdana;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 120px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid #ccc; */
+}
+
+.user-content img {
+    width: 100%;
+}
+
+.user-item small {
+    display: block;
+    padding-top: 10px;
+}
+
+.user-item i {
+    padding-top: 10px;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.user-item>div {
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    bottom: -60px;
+    line-height: 16px;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    padding: 20px;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/all.css" />
+
+
+    <title>Document</title>
+    <style>
+        /* product-item */
+        
+        #card-content {
+            min-height: 850px;
+        }
+        
+        .product_total_wrapper,
+        .product_item {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 20px;
+            padding: 30px;
+        }
+        
+        .product_item {
+            position: relative;
+        }
+        
+        .product_img {
+            width: 100%;
+        }
+        
+        .product_img img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .product_quantity {
+            border: 1px solid #000;
+            margin-left: 15px;
+            max-width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .qty::-webkit-outer-spin-button,
+        .qty::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        .qty[type=number] {
+            -moz-appearance: textfield;
+        }
+        
+        .qty {
+            width: 10px;
+            border: none;
+            text-align: center;
+            outline: none;
+        }
+        
+        .minus,
+        .plus {
+            font-size: 12px;
+            padding: 4px 14px;
+        }
+        /* product toto price */
+        
+        .product_total_wrapper {}
+        
+        .product_total_price {
+            margin-bottom: 80px;
+        }
+        
+        .product_payment {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: #f5411d;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        
+        .btn-back:hover,
+        .product_payment:hover {
+            background-color: #fd866e;
+        }
+        
+        .product_payment a {
+            color: #fff;
+        }
+        
+        .btn-back:hover,
+        .product_payment:hover a {
+            text-decoration: none !important;
+            color: #fff;
+        }
+        
+        .btn-back {
+            background-color: #f5411d;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        
+        .product_remove {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: rgb(155, 155, 155);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px 25px;
+        }
+        
+        .product_remove:hover {
+            opacity: 0.5;
+        }
+        /* no items */
+        
+        .no_items__wrapper {
+            display: none;
+        }
+        
+        .no_items__content {
+            margin-top: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .no_items__content {
+            min-width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <header id="header" data-aos="fade-down" data-aos-duration="1000">
+
+        </header>
+        <div class="modal js-modal" id="modal">
+
+        </div>
+        <div class="container" id="card-content" style="padding: 120px 0;">
+            <div class="have_items__wrapper">
+                <h1 class="text-center display-4" style="margin-bottom: 1em;">Giỏ hàng</h1>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="product_wrapper" id="producItems">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product_total_wrapper">
+                            <div class="product_total_price">
+                                <div class="product_total_price_title mb-4">
+                                    <h2>Tổng tiền</h2>
+                                </div>
+                                <div class="product_total_price_value">
+                                    <h4>100.770.000 ₫</h4>
+                                </div>
+                            </div>
+                            <div class="product_payment">
+                                <a href="#" class="m-0">Thanh toán ngay</a>
+                            </div>
+                            <div class="product_payment mt-2">
+                                <a href="#" class=" m-0">Tiếp tục mua sắm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="no_items__wrapper">
+                <div class="no_items__content">
+                    <img src="../assets/img/card.gif" alt="">
+                    <h2 class="text-center">Không có sản phẩm nào trong giỏ hàng</h2>
+                    <a href="../html/shop-new.html" class="btn-back">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-area" id="footer">
+
+        </div>
+    </div>
+</body>
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/cart.js"></script>
+<script src="../assets/js/all.js"></script>
+
+</html>

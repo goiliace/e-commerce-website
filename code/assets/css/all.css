@@ -1,0 +1,269 @@
+:root {
+    --main-color-light: #fd866e;
+    --main-color-dark: #f5411d;
+    --khoangcach: 70px;
+}
+
+.wrapper {
+    padding: 0 40px;
+    margin: var(--khoangcach) 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+}
+
+
+/* header */
+
+header {
+    position: fixed;
+    background: #fff;
+    z-index: 100;
+    /* top: -100px; */
+    transition: top 0.5s ease-in-out;
+    left: 0;
+    right: 0;
+}
+
+.stateBox .nav-link,
+.navbar-nav .nav-link {
+    color: #000;
+    font-size: 18px;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: all 0.3s ease-out;
+}
+
+.sub-menu li:hover .nav-link,
+.nav-item:hover>.nav-link {
+    color: var(--main-color-light) !important;
+}
+
+
+/* .nav-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+.navbar-expand-md .nav-item:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub-menu li:hover .nav-link {
+    margin-left: 10px;
+}
+
+.stateBox .nav-link {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.sub-menu {
+    position: absolute;
+    visibility: collapse;
+    opacity: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 12px 10px;
+    min-width: 250px;
+    transition: visibility 0s, opacity 0.3s linear;
+    z-index: 100;
+}
+
+.sub-menu a {
+    transition: all 0.1s ease-in-out;
+    color: #000;
+}
+
+.sub-menu li {}
+
+.active-page {
+    color: var(--main-color-light) !important;
+}
+
+
+/* end header */
+
+
+/* btn */
+
+.btn-buy {
+    background: var(--main-color-dark);
+    color: #fff;
+    width: 100%;
+}
+
+.btn-buy:hover {
+    background-color: var(--main-color-light);
+    color: #fff;
+}
+
+
+/* end btn */
+
+
+/* product */
+
+.item {
+    height: 100%;
+}
+
+.item-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card-title {
+    margin-bottom: auto;
+}
+
+.card {
+    height: 100%;
+}
+
+.link-product {
+    color: #000 !important;
+}
+
+.link-product:hover {
+    text-decoration: none;
+}
+
+
+/* end product */
+
+
+/* modal search */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    width: 900px;
+    max-width: calc(100% - 40px);
+    position: relative;
+    animation: modalFaceIn ease-in-out 0.5s;
+}
+
+.search_box {}
+
+.input_search {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.input_search:focus {
+    outline: none;
+}
+
+.input_icon {
+    position: absolute;
+    width: 24px;
+    color: #ccc;
+    height: 24px;
+    right: 5px;
+}
+
+.suggestion_box {
+    margin-top: 20px;
+}
+
+.suggestion_box-item {
+    position: relative;
+    display: flex;
+    color: #555;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(222, 222, 222, 0.45);
+}
+
+.suggestion_box-item p {
+    margin: 0;
+}
+
+.suggestion_box-item-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.modal.open {
+    display: flex;
+}
+
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* footer */
+
+.footer-area {
+    background: var(--main-color-light);
+    color: #fff;
+    padding-top: 80px;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 2px solid #fff;
+}
+
+.footer-area a {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.footer-area input {
+    border-color: #fff;
+    padding: 25px;
+    color: #fff;
+}
+
+.footer-area input:focus,
+.footer-area input::placeholder {
+    color: #fff;
+}
+
+
+/* end footer */

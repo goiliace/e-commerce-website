@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/user.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" data-aos="fade-down" data-aos-duration="1000">
+
+    </header>
+    <div class="modal js-modal" id="modal">
+
+    </div>
+    <div class="container" id="no-user">
+        <div class="no-user">
+            <div class="no-user-img">
+                <img src="../assets/img/user/guest.png" alt="">
+            </div>
+            <div class="no-user-text text-center">
+                <h3>Hi, <span>Guest</span></h3>
+                <p>Bạn chưa đăng nhập, vui lòng đăng nhập để tiếp tục</p>
+                <button class="btn btn-light"><a href="../html/signin.html">Đến trang đăng nhập</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="user" class="container d-none">
+        <div class="user_wrapper">
+            <div class="user">
+                <div class="user_img__wrapper">
+                    <img src="../assets/img/boy.png" class="img-user" alt="">
+                </div>
+                <div class="user_info">
+                    <p class="m-0 text-center   ">Xin chào</p>
+                    <h1 id="user-name"></h1>
+                </div>
+            </div>
+            <div class="row box_content">
+                <div class="col-md-4">
+                    <div class="item_content yellow_light">
+                        <div class="item_content_img">
+                            <img src="../assets/img/user/giftbox.png" alt="gift">
+                        </div>
+                        <div class="item_content__title">Ưu đãi của bạn</div>
+                        <div class="item-content__counter">Bạn chưa có ưu đãi nào</div>
+                        <button class="btn item-content__detail">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item_content green_light">
+                        <div class="item_content_img">
+                            <img src="../assets/img/user/delivery-truck.png" alt="gif">
+                        </div>
+                        <div class="item_content__title">Đơn hàng của bạn</div>
+                        <div class="item-content__counter">Bạn chưa có đơn hàng nào</div>
+                        <button class="btn item-content__detail">Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item_content blue_light">
+                        <div class="item_content_img ">
+                            <img src="../assets/img/user/heart-label-tag.png" alt="gif">
+                        </div>
+
+                        <div class="item_content__title">Sản phẩm đã mua</div>
+                        <div class="item-content__counter">Bạn chưa mua sản phẩm nào</div>
+                        <button class="btn item-content__detail">Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end user -->
+        <!-- user about -->
+        <div class="user_about__wrapper">
+            <div class="user_about">
+                <div class="user_about__title">Thông tin tài khoản</div>
+                <div class="user_about__content row">
+                    <div class="col-md-3 user_about__content__item">
+                        <img src="../assets/img/user/phone.PNG" alt="">
+                        <div class="user_about__content__item__title">Số điện thoai</div>
+                        <div class="user_about__content__item__content" id="user-phone">0347825051</div>
+                    </div>
+                    <div class="col-md-3 user_about__content__item">
+                        <img src="../assets/img/user/mail.PNG" alt="">
+                        <div class="user_about__content__item__title">Email</div>
+                        <div class="user_about__content__item__content" id="user-email">zombizombi51@gmail.com</div>
+                    </div>
+                    <div class="col-md-3 user_about__content__item">
+                        <img src="../assets/img/user/money.PNG" alt="">
+                        <div class="user_about__content__item__title">Tổng tiền đã mua</div>
+                        <div class="user_about__content__item__content">0đ</div>
+                    </div>
+                    <div class="col-md-3 user_about__content__item">
+                        <img src="../assets/img/user/location.PNG" alt="">
+                        <div class="user_about__content__item__title">Địa chỉ giao hàng</div>
+                        <div class="user_about__content__item__content" id="user-address">Chưa cập nhập</div>
+                    </div>
+                </div>
+            </div>
+            <div class="user_setting mt-4">
+
+                <div class="row user_setting__content">
+                    <div class="col-md-6">
+                        <div class="user_setting__content__item blue_light" data-target="#user-update-modal" data-toggle="modal" id="user-updateInfo">
+                            <img src="../assets/img/user/setting.PNG" alt="">
+                            <div class="user_setting__content__item__title">Cập nhập thông tin</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="user_setting__content__item green_light" id="log-out">
+                            <img src="../assets/img/user/logout.PNG" alt="">
+                            <div class="user_setting__content__item__title">Thoát tài khoản</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="user-update-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Chỉnh sửa thông tin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="user-name">Họ và tên</label>
+                            <input type="text" class="form-control" id="user-update-name" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-phone">Số điện thoại</label>
+                            <input type="text" class="form-control" id="user-update-phone" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-email">Email</label>
+                            <input type="text" class="form-control" id="user-update-email" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-address">Địa chỉ</label>
+                            <input type="text" class="form-control" id="user-update-address" value="" placeholder="Chưa cập nhập">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" id="done-update" data-dismiss="modal">Xong</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-area" id="footer">
+
+    </div>
+</body>
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/all.js"></script>
+<script src="../assets/js/user.js"></script>
+
+</html>
