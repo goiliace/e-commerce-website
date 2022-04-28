@@ -109,24 +109,29 @@ $(document).ready(function() {
         $('#phone').attr('value', user_now.phone);
         $('#email').attr('value', user_now.email);
         $('#done').click(function() {
-            var address = $('#address').val();
-            var phone = $('#phone').val();
-            var email = $('#email').val();
-            var cart = JSON.parse(localStorage.getItem('cart'))
-            var total = $('.product_total_price_value h4').val().replace(/\D/g, '');
-            var total = 0;
-            var order = {
-                address: address,
-                phone: phone,
-                email: email,
-                total: total,
-                cart: cart
+            if ($('#address').val() == '' || $('#phone').val() == '' || $('#email').val() == '' || !$("input[name='inlineRadioOptions']:checked").val()) {
+                alert('Bạn cần nhập đầy đủ thông tin')
+            } else {
+                var address = $('#address').val();
+                var phone = $('#phone').val();
+                var email = $('#email').val();
+                var cart = JSON.parse(localStorage.getItem('cart'))
+                var total = $('.product_total_price_value h4').val().replace(/\D/g, '');
+                var total = 0;
+                var order = {
+                    address: address,
+                    phone: phone,
+                    email: email,
+                    total: total,
+                    cart: cart
+                }
+                console.log(order);
+                alert("Đặt hàng thành công");
+                localStorage.setItem('order', JSON.stringify(order))
+                localStorage.removeItem('cart')
+                location.reload();
+
             }
-            console.log(order);
-            alert("Đặt hàng thành công");
-            localStorage.setItem('order', JSON.stringify(order))
-            localStorage.removeItem('cart')
-            location.reload();
         });
 
     }

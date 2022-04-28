@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link href="../assets/node_modules/aos/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/all.css" />
+    <link rel="stylesheet" href="../assets/css/shop.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- header -->
+        <header id="header">
+
+        </header>
+        <div class="modal js-modal" id="modal">
+        </div>
+
+        <div id="shop" data-path="all" class="container-fluid shop-wrapper">
+            <div class="row">
+                <div class="col-xl-3 col-sm-12">
+                    <div id="sideBar">
+                        <div class="shop-search__wrapper position-relative border-b">
+                            <input type="text" class="form-control" id="shop-search__input" placeholder="Bạn cần tìm gì?">
+                            <label for="shop-search__input" class="shop-search__icon">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <div class="shop-filter__wrapper">
+                            <div class="shop-filter__content">
+                                <div class="shop-filter__item">
+                                    <div class="shop-filter__item-title" data-aos="fade-down" data-aos-duration="1000">
+                                        <h4>Giá</h4>
+                                    </div>
+                                    <div class="shop-filter__item-content" data-aos="fade-right" data-aos-duration="1000">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="filter-product" value="" id="filter-product__all" checked>
+                                            <label class="form-check-label" for="filter-product__all">
+                                                                    Tất cả
+                                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="filter-product" value="" id="filter-product__10">
+                                            <label class="form-check-label" for="filter-product__10">
+                                                                    Dưới 1.000.000đ
+                                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="filter-product" value="" id="filter-product__20">
+                                            <label class="form-check-label" for="filter-product__20">
+                                                                    1.000.000đ - 2.000.000đ
+                                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="filter-product" value="" id="filter-product__50">
+                                            <label class="form-check-label" for="filter-product__50">
+                                                                    2.000.000đ - 3.000.000đ
+                                                                </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="filter-product" value="" id="filter-product__100">
+                                            <label class="form-check-label" for="filter-product__100">
+                                                                    Trên 3.000.000đ
+                                                                </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-sm-12">
+                    <div class="row shop_product">
+
+                    </div>
+                    <div class="not-found d-none">
+                        <h4 class="display-4">Không tìm thấy sản phẩm</h4>
+                        <span class="btn-link main-color">Nhấn để trở về</span>
+                        <p class="mt-3">(Hoặc bạn có thể tiếp tục tìm kiếm ^^)</p>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-area" id="footer">
+
+        </div>
+    </div>
+</body>
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/node_modules/aos/dist/aos.js"></script>
+<script src="../assets/js/all.js"></script>
+<script src="../assets/js/shop_brand.js"></script>
+<script src="../assets/js/shop.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+</html>

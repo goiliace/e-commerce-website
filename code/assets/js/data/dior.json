@@ -1,0 +1,249 @@
+[
+    {
+        "id": 1,
+        "link": "https://www.theperfumeshop.com/dior/miss-dior/eau-de-parfum-for-her/p/17800EDPJU",
+        "img": "../assets/img/product/sp1/1.webp",
+        "brand": "DIOR",
+        "title": "Miss Dior",
+        "descrip": "Eau de Parfum for her",
+        "cost": "",
+        "price": 1770000,
+        "subProduct": {
+            "pre_img": [
+                "../assets/img/product/sp1/1.webp",
+                "../assets/img/product/sp1/2.webp",
+                "../assets/img/product/sp1/3.webp"
+            ],
+            "des": "Discover the NEW Miss Dior Eau de Parfum. A breath of love and optimism. Natalie Portman calls out to wake up to the beauty of the world and always\u2026 To love.",
+            "des_img": [
+                "https://www.theperfumeshop.com/medias/sys_master/generic-categories-media/generic-categories/11477756739614/F750-MD-22-P09C-Pano-V11-NEW2-L4-F39.jpg",
+                "https://www.theperfumeshop.com/medias/sys_master/generic-categories-media/generic-categories/11477764800542/The-Perfume-shop-uk-Mobile-Product-Page-5.jpg",
+                "https://www.theperfumeshop.com/medias/sys_master/generic-categories-media/generic-categories/11477767782430/The-Perfume-shop-uk-Mobile-Product-Page-6.jpg"
+            ],
+            "des_content": [
+                "A delectable smooth velvet rose as if embroidered with a thousand shimmering colourful flowers. Like an olfactory \u201cmillefiori\u201d, freshness and sensuality are intertwined to enhance the most couture fragrance by the House of Dior.",
+                "\u201cAll our senses are awakened by the sensuality of the new Miss Dior Eau de Parfum\u2019s floral bouquet. It celebrates the velvety and sensual Roses\u2014heightened by a fresh Lily-of-the-Valley and spicy Peony\u2014enveloped by a powdery Iris.\u201d\n\nFran\u00e7ois Demachy, Dior Perfumer-Creator",
+                "The couturier\u2019s fragrance is now adorned with a new poignard fabric bow\u2014 around 396 threads of pure luxury hand-crafted and hand-tied around the bottle\u2019s neck.\nAll the Dior dream in a bow."
+            ],
+            "des_about": {
+                "Top notes": "Lily-of-the-Valley, Peony Accord, Iris",
+                "Heart notes": "Centifolia Rose",
+                "Base notes": "Musks, Vanilla, Benzoin, Tonka Bean, Sandalwood",
+                "Scent": "Woody",
+                "Launch date": "2021"
+            },
+            "des_about_des": [
+                "The new Miss Dior eau de parfum brings in a wave of optimism and brims with life\u2014echoing Miss Dior's very essence. Miss Dior's fresh and floral notes are composed like a bouquet of countless flowers with endless sparkling colours. Fran\u00e7ois Demachy, Perfumer-Creator of the House of Dior, wanted to create an iridescent Rose for this fragrance that is lit up by a myriad of fresh and floral notes.",
+                "The iconic Miss Dior couture bow harnesses an exceptional artisanal savoir-faire that transforms each embroidered ribbon into a unique piece, that of a true high fashion creation.",
+                "A perfect gift for Mother's Day.",
+                "OLFACTORY NOTES:",
+                "TOP NOTES: FLORAL BOUQUET",
+                "The floral freshness of Lily-of-the-Valley notes, an expressive Peony accord, and caressing Iris notes are accompanied by a slightly dewy, verdant quality.",
+                "HEART NOTES: CENTIFOLIA ROSE",
+                "A delectably creamy, lush, and velvety Rose, around which an armful of flowers resembling a \"millefiori\" come alive.",
+                "BASE NOTES: TENDER WOODS",
+                "Softly comforting Musks, a touch of Papua New Guinean Vanilla, a dash of Benzoin and a hint of Tonka Bean encounter a creamy Sandalwood.",
+                "INGREDIENTS",
+                "#15773 ALCOHOL \u25cf PARFUM (FRAGRANCE) \u25cf AQUA (WATER) \u25cf BENZYL SALICYLATE \u25cf LINALOOL \u25cf LIMONENE \u25cf BUTYL METHOXYDIBENZOYLMETHANE \u25cf HYDROXYCITRONELLAL \u25cf GERANIOL \u25cf COUMARIN \u25cf CITRONELLOL \u25cf TRIETHYL CITRATE \u25cf BENZYL BENZOATE \u25cf PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE \u25cf FARNESOL \u25cf CITRAL \u25cf BENZYL CINNAMATE \u25cf ANISE ALCOHOL \u25cf BENZYL ALCOHOL \u25cf TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE \u25cf EUGENOL \u25cf CI 17200 (RED 33) \u25cf CI 14700 (RED 4) \u25cf CI 19140 (YELLOW 5) \u25cf CI 60730 (EXT. VIOLET 2)"
+            ]
+        },
+        "data-aos": "fade-right"
+    },
+    {
+        "id": 2,
+        "link": "https://www.theperfumeshop.com/dior/sauvage/eau-de-toilette-for-him/p/65330EDTJU",
+        "img": "../assets/img/product/sp2/1.webp",
+        "brand": "DIOR",
+        "title": "Sauvage",
+        "descrip": "Eau de Toilette for him",
+        "cost": "",
+        "price": 1560000,
+        "subProduct": {
+            "pre_img": [
+                "../assets/img/product/sp2/1.webp",
+                "../assets/img/product/sp2/2.webp",
+                "../assets/img/product/sp2/3.webp"
+            ],
+            "des": "Sauvage is an act of creation inspired by wide-open spaces. A composition signed with a raw freshness, between power and nobility.",
+            "des_img": [
+                "https://www.theperfumeshop.com/medias/sys_master/generic-categories-media/generic-categories/11484011888670/A20-F591-SAUVAGE-RESOURCE-P02A-SOLO-HERO-SW-F39.jpg"
+            ],
+            "des_content": [
+                "The strong gust of Citrus in Sauvage Eau de Toilette is powerfully anchored by the ambery nobleness of Ambroxan, resinous Elemi and Woodsthat bind the whole.",
+                "Instantle recognisable, it has become a genuine signature scent, unique* in its confident virility.",
+                "Like a deep breath of fresh air, Sauvage Eau de Toilette is a bold composition for a man who is true to himself.",
+                " "
+            ],
+            "des_about": {
+                "Top notes": "Sichuan Pepper, Bergamot",
+                "Heart notes": "Lavender, Geranium",
+                "Base notes": "Vetiver, Patchouli, Ambroxan",
+                "Launch date": "2015"
+            },
+            "des_about_des": [
+                "Sauvage Eau de Toilette 100ml & new 30ml are now refillable.",
+                "Dior Sauvage is a radically fresh composition, dictated by a name that has the ring of a manifesto. That was the way Fran\u00e7ois Demachy, Dior Perfume-Creator, wanted it: raw and noble all at once.",
+                "Natural ingredients, selected with extreme care, prevail in excessive doses.",
+                "Radiant top notes burst with the juicy freshness of Reggio di Calabria Bergamot. Ambroxan, derived from precious ambergris, unleashes a powerfully woody trail.",
+                "Sauvage is an act of creation inspired by wide-open spaces. An ozone blue sky sprawled above a rocky landscape, white-hot beneath the desert sun."
+            ]
+        },
+        "data-aos": "fade-down"
+    },
+    {
+        "id": 34,
+        "link": "https://www.theperfumeshop.com/dior/hypnotic-poison/eau-de-toilette-for-her/p/16850EDTJU",
+        "img": "../assets/img/product/sp34/1.webp",
+        "brand": "DIOR",
+        "title": "Hypnotic Poison",
+        "descrip": "Eau de Toilette for her",
+        "cost": "",
+        "price": 1560000,
+        "subProduct": {
+            "pre_img": [
+                "../assets/img/product/sp34/1.webp",
+                "../assets/img/product/sp34/2.webp",
+                "../assets/img/product/sp34/3.webp"
+            ],
+            "des": "Hypnotic Poison isn\u2019t a fragrance you wear, it\u2019s a fragrance that wears you.\nA heady and incredibly sensual oriental.\nA true gem, the legendary Eau de Toilette bottle now flaunts a decidedly modern shade of bright, vibrant red.",
+            "des_img": [],
+            "des_content": [],
+            "des_about": {
+                "Launch date": "1998"
+            },
+            "des_about_des": [
+                "The mystery of Dior's legendary forbidden fruit lives on in a magical, modern philter that blends femininity with boldness. Four contrasting facets - intoxicating bitter almond and carvi, opulent Sambac jasmine, mysterious Jacarandra and sensuous vanilla and musk - make for a compelling, bewitching fragrance fusion. Intoxicating and extravagant."
+            ]
+        },
+        "data-aos": "fade-down"
+    },
+    {
+        "id": 38,
+        "link": "https://www.theperfumeshop.com/dior/sauvage/eau-de-toilette-for-him/p/65330EDTJU",
+        "img": "https://www.theperfumeshop.com/medias/sys_master/front-cat/front-cat/11256670683166/DIOR-Eau-de-Toilette-for-him-Sauvage.jpg",
+        "brand": "DIOR",
+        "title": "Sauvage",
+        "descrip": "Eau de Toilette for him",
+        "cost": "",
+        "price": 1560000,
+        "subProduct": {
+            "pre_img": [
+                "https://www.theperfumeshop.com/medias/sys_master/front-zoom/front-zoom/11256668028958/DIOR-Eau-de-Toilette-for-him-3348901321129-Sauvage.jpg",
+                "https://www.theperfumeshop.com/medias/sys_master/side-zoom/side-zoom/11256621367326/DIOR-Eau-de-Toilette-for-him-3348901321129-Sauvage.jpg",
+                "https://www.theperfumeshop.com/medias/sys_master/back-zoom/back-zoom/11256666849310/DIOR-Eau-de-Toilette-for-him-3348901321129-Sauvage.jpg"
+            ],
+            "des": "Sauvage is an act of creation inspired by wide-open spaces. A composition signed with a raw freshness, between power and nobility.",
+            "des_img": [
+                "https://www.theperfumeshop.com/medias/sys_master/generic-categories-media/generic-categories/11484011888670/A20-F591-SAUVAGE-RESOURCE-P02A-SOLO-HERO-SW-F39.jpg"
+            ],
+            "des_content": [
+                "The strong gust of Citrus in Sauvage Eau de Toilette is powerfully anchored by the ambery nobleness of Ambroxan, resinous Elemi and Woodsthat bind the whole.",
+                "Instantle recognisable, it has become a genuine signature scent, unique* in its confident virility.",
+                "Like a deep breath of fresh air, Sauvage Eau de Toilette is a bold composition for a man who is true to himself.",
+                " "
+            ],
+            "des_about": {
+                "Top notes": "Sichuan Pepper, Bergamot",
+                "Heart notes": "Lavender, Geranium",
+                "Base notes": "Vetiver, Patchouli, Ambroxan",
+                "Launch date": "2015"
+            },
+            "des_about_des": [
+                "Sauvage Eau de Toilette 100ml & new 30ml are now refillable.",
+                "Dior Sauvage is a radically fresh composition, dictated by a name that has the ring of a manifesto. That was the way Fran\u00e7ois Demachy, Dior Perfume-Creator, wanted it: raw and noble all at once.",
+                "Natural ingredients, selected with extreme care, prevail in excessive doses.",
+                "Radiant top notes burst with the juicy freshness of Reggio di Calabria Bergamot. Ambroxan, derived from precious ambergris, unleashes a powerfully woody trail.",
+                "Sauvage is an act of creation inspired by wide-open spaces. An ozone blue sky sprawled above a rocky landscape, white-hot beneath the desert sun."
+            ]
+        },
+        "data-aos": "fade-down"
+    },
+    {
+        "id": 39,
+        "link": "https://www.theperfumeshop.com/dior/sauvage/eau-de-parfum-for-him/p/65330EDPJU",
+        "img": "https://www.theperfumeshop.com/medias/sys_master/front-cat/front-cat/11256660525086/DIOR-Eau-de-Parfum-for-him-Sauvage.jpg",
+        "brand": "DIOR",
+        "title": "Sauvage",
+        "descrip": "Eau de Parfum for him",
+        "cost": "",
+        "price": 2070000,
+        "subProduct": {
+            "pre_img": [
+                "https://www.theperfumeshop.com/medias/sys_master/front-zoom/front-zoom/11256681463838/DIOR-Eau-de-Parfum-for-him-3348901368254-Sauvage.jpg",
+                "https://www.theperfumeshop.com/medias/sys_master/side-zoom/side-zoom/11256638930974/DIOR-Eau-de-Parfum-for-him-3348901368254-Sauvage.jpg",
+                "https://www.theperfumeshop.com/medias/sys_master/back-zoom/back-zoom/11256636243998/DIOR-Eau-de-Parfum-for-him-3348901368254-Sauvage.jpg"
+            ],
+            "des": "Sauvage is an act of creation inspired by wide-open spaces. A composition signed with a raw freshness, between power and nobility.",
+            "des_img": [
+                "https://www.theperfumeshop.com/medias/sys_master/generic-categories-media/generic-categories/11484081324062/MAIN-MOOD-PACKSHOT-SAUVAGE-EDP.jpg"
+            ],
+            "des_content": [
+                "Fran\u00e7ois Demachy, Dior Perfumer-Creator, drew inspiration from the desert in the magical hour of twilight. Mixed with the coolness of the night, the burning desert air exudes profound fragrances. In the hour when the wolves come out and the sky is set ablaze, a new magic unfolds."
+            ],
+            "des_about": {
+                "Top notes": "Calabrian Bergamot",
+                "Base notes": "Papua New Guinean Vanilla Absolute",
+                "Scent": "Woody",
+                "Launch date": "2017"
+            },
+            "des_about_des": [
+                "The juicy and spicy freshness of Dior Sauvage exudes new sensual and enveloping facets of vanilla absolute.",
+                "The powerful freshness of Sauvage exudes new sensual and mysterious facets, amply renewing itself with the signature of an ingenious composition. Calabrian bergamot, as juicy and spirited as ever, invites new spicy notes to add fullness and sensuality, as the woody ambery trail of Ambroxan\u00ae is wrapped in the smoky accents of Papua New Guinean vanilla absolute for greater virility. Fran\u00e7ois Demachy, Dior Perfumer-Creator, drew inspiration from the desert in the magical hour of twilight. Mixed with the coolness of the night, the burning desert air exudes profound fragrances. In the hour when the wolves come out and the sky is set ablaze, a new magic unfolds.",
+                "\"I didn't create Eau de Parfum Sauvage by working on power. Its signature is already very identifiable. It was not a matter of exaggerating or saturating the composition. I was striving more to enrich each of the dominant notes to give it a new colour.\" Fran\u00e7ois Demachy, Dior Perfumer-Creator",
+                "Reggio Bergamot",
+                "Fran\u00e7ois Demachy likes his men's fragrances to open with a snap of citrus. For the house of Dior, he chose an exclusive bergamot that he shaped with local producers to obtain a \"custom\" signature.",
+                "His bergamot is like a whirlwind of juicy freshness that sweeps everything up in its path. Drenched in the Calabrian sun, it is fruitier and develops unique, zesty facets with a tinge of pepper.",
+                "Papua New Guinean vanilla absolute",
+                "Papua New Guinean vanilla absolute exerts an irresistibly delicious attraction with smoky accents that render it more virile.",
+                "Harvested green and then scalded, this exceptional vanilla is processed using a solvent-free extraction method to restore the complex power of its aromas while preserving the environment."
+            ]
+        },
+        "data-aos": "fade-right"
+    },
+    {
+        "id": 42,
+        "link": "https://www.theperfumeshop.com/dior/sauvage/parfum-for-him/p/65330PRFJU",
+        "img": "https://www.theperfumeshop.com/medias/sys_master/front-cat/front-cat/11396466278430/DIOR-Parfum-for-him-Sauvage.jpg",
+        "brand": "DIOR",
+        "title": "Sauvage",
+        "descrip": "Parfum for him",
+        "cost": "",
+        "price": 2370000,
+        "subProduct": {
+            "pre_img": [
+                "https://www.theperfumeshop.com/medias/sys_master/front-zoom/front-zoom/11256622284830/DIOR-Parfum-for-him-3348901486392-Sauvage.jpg",
+                "https://www.theperfumeshop.com/medias/sys_master/side-zoom/side-zoom/11256624840734/DIOR-Parfum-for-him-3348901486392-Sauvage.jpg",
+                "https://www.theperfumeshop.com/medias/sys_master/back-zoom/back-zoom/11256673140766/DIOR-Parfum-for-him-3348901486392-Sauvage.jpg"
+            ],
+            "des": "Sauvage is an act of creation inspired by wide-open spaces. A composition signed with a raw freshness, between power and nobility.",
+            "des_img": [
+                "https://www.theperfumeshop.com/medias/sys_master/generic-categories-media/generic-categories/11484320694302/SAUVAGE-PARFUM-HERO-MOOD.jpg"
+            ],
+            "des_content": [
+                "An highly concentrated interpretation of Sauvage, melding extreme freshness with warm oriental tones and fierce beauty that comes to life on the skin.",
+                "Fran\u00e7ois Demachy, Dior Perfumer-Creator, drew inspiration from unspoiled expanses of wilderness beneath a blue-tinged night sky, as the intense aromas of a crackling fire rise into the air.",
+                "The fragrance of a new frontier: an interpretation with an enriched, heady trail that celebrates the magic of wide-open spaces.",
+                " "
+            ],
+            "des_about": {
+                "Top notes": "Mandarin, Bergamot",
+                "Heart notes": "Virginian Cedar, Sandalwood",
+                "Base notes": "Vanilla Absolute",
+                "Scent": "Fresh",
+                "Launch date": "2019"
+            },
+            "des_about_des": [
+                "DIOR SAUVAGE PARFUM, VIBRANT & FIERCE",
+                "A new, highly concentrated interpretation of Sauvage, brightening the scent's signature freshness with the sizzle of a plump and spicy Mandarin. Heady swirls of mellow Tonka Bean with leathery and bitter aromas enlace a trail dominated by sensual Sri Lankan Sandalwood. ",
+                "OLFACTORY DESCRIPTION",
+                "\u2022 Mandarin and Bergamot from Reggio di Calabria",
+                "For the House of Dior, Fran\u00e7ois Demachy chose an exclusive Bergamot that he shaped with local producers to obtain a custom signature. His Bergamot is a whirlwind of juicy freshness that seems to sweep up everything in its path. Drenched in the Calabrian sun, it is fruitier and develops unique, slightly peppery and zesty facets. For Dior Sauvage Parfum, it welcomes a plump Mandarin note that lends it a fruitier, rounder quality.",
+                "\u2022 Virginian Cedar and Sandalwood essence from Sri Lanka",
+                "Sri Lankan Sandalwood essence heightens and envelops the entire composition. This dense, addictive wood unleashes the full power of its milky, creamy accords. Its sensual note is enchanting, joined by Virginian Cedar that surprises with an unexpected raspberry facet.",
+                "\u2022 Vanilla absolute from Papua New Guinea",
+                "Vanilla absolute from Papua New Guinea unfurls an irresistibly delicious attraction with smoky accents that give it a more powerful touch. Harvested green and then soaked in hot water, this exceptional Vanilla from Papua New Guinea is processed using an innovative extraction method that restores the complex power of its aromas. In Sauvage Parfum, it is wrapped in a slightly bitter, delicious and mouth-watering Tonka Bean."
+            ]
+        },
+        "data-aos": "fade-left"
+    }
+]

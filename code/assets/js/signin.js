@@ -31,6 +31,7 @@ $(document).ready(function() {
         if ($("#name-signup").val().length < 3) {
             $('#f-name').removeClass("d-none");
             $('#f-name-2').addClass("d-none");
+            $('#name-signup').focus();
             return false;
         } else {
             $('#f-name-2').removeClass("d-none");
@@ -41,6 +42,7 @@ $(document).ready(function() {
             } else {
                 $('#f-name').removeClass("d-none");
                 $('#t-name').addClass("d-none");
+                $('#name-signup').focus();
                 return false;
             }
         }
@@ -55,6 +57,7 @@ $(document).ready(function() {
         } else {
             $('#f-email').removeClass("d-none");
             $('#t-email').addClass("d-none");
+            $('#email-signup').focus();
             return false;
         }
     }
@@ -68,6 +71,7 @@ $(document).ready(function() {
         } else {
             $('#f-phone').removeClass("d-none");
             $('#t-phone').addClass("d-none");
+            $('#phone-signup').focus();
             return false;
         }
     }
@@ -94,18 +98,20 @@ $(document).ready(function() {
             $('#f-pass').removeClass("d-none");
             $('#t-Spass').addClass("d-none");
             $('#t-Mpass').addClass("d-none");
+            $('#password-signup').focus();
             return false;
         }
     }
 
     function checkConfirmPass() {
-        if ($("#password-signup").val() == $("#confirm-password-signup").val()) {
+        if ($("#password-signup").val() == $("#confirm-password-signup").val() && $("#confirm-password-signup").val().trim() != '') {
             $('#f-repass').addClass("d-none");
             $('#t-repass').removeClass("d-none");
             return true;
         } else {
             $('#f-repass').removeClass("d-none");
             $('#t-repass').addClass("d-none");
+            // $('#confirm-password-signup').focus();
             return false;
         }
     }

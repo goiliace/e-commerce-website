@@ -10,15 +10,24 @@
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../assets/fonts/material-icon/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="../assets/js/signin.js"></script>
+    <link rel="stylesheet" href="../assets/css/all.css">
     <link rel="stylesheet" href="../assets/css/signin.css">
+
     <style>
 
     </style>
 </head>
 
 <body>
-    <div class="container right-panel-active ">
+    <header id="header" data-aos="fade-down" data-aos-duration="1000">
+
+    </header>
+    <div class="modal js-modal" id="modal">
+
+    </div>
+    <div class="container container-custom right-panel-active ">
         <!-- Đăng kíz -->
         <div class="container__form container--signup">
             <form action="" class="form" id="form1">
@@ -76,6 +85,7 @@
                     </div>
                     <div class="check text-danger d-none" id="f-repass">
                         <i class=" zmdi zmdi-close-circle"></i>
+                        <span class="notification bg-danger">Không khớp hoặc để trống</span>
                     </div>
                 </div>
                 <button type="button" data-target="#signInModal" data-toggle="modal" class="btn" id="dangki">Đăng kí</button>
@@ -118,6 +128,10 @@
             </div>
         </div>
     </div>
+    <div class="footer-area" id="footer">
+
+    </div>
 </body>
+<script src="../assets/js/all.js"></script>
 
 </html>

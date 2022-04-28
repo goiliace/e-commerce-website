@@ -7,9 +7,7 @@
 }
 
 body {
-    align-items: center;
-    display: flex;
-    height: 98vh;
+    position: relative;
 }
 
 .form__title {
@@ -19,13 +17,14 @@ body {
     margin-bottom: 1.25rem;
 }
 
-.container {
+.container-custom {
     border-radius: var(--button-radius);
     box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
     height: var(--max-height);
     max-width: var(--max-width);
     overflow: hidden;
     position: relative;
+    margin: 120px auto;
     background: url("../img/dangki+dangnhap/bg.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -50,7 +49,7 @@ body {
     z-index: 2;
 }
 
-.container.right-panel-active .container--signin {
+.container-custom.right-panel-active .container--signin {
     transform: translateX(100%);
 }
 
@@ -61,7 +60,7 @@ body {
     z-index: 1;
 }
 
-.container.right-panel-active .container--signup {
+.container-custom.right-panel-active .container--signup {
     opacity: 1;
     transform: translateX(100%);
     z-index: 9;
@@ -165,10 +164,10 @@ body {
 }
 
 @media only screen and (max-width: 63.9375em) {
-    .container {
+    .container-custom {
         background: #fff;
     }
-    .container.right-panel-active .container--signup {
+    .container-custom.right-panel-active .container--signup {
         transform: translateX(0%);
     }
     .container--signup {

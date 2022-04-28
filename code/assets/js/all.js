@@ -17,18 +17,18 @@ const header = `<nav class="navbar navbar-expand-md">
                 <li><a class="nav-link" href="./shop-new.html">Sản phẩm mới</a></li>
                 <li> <a class="nav-link  " href="./shop-women.html">Women</a></li>
                 <li><a class="nav-link" href="./shop-men.html">Men</a></li>
-                <li><a class="nav-link" href=""> Comming Soon  </a></li>
+                <li><a class="nav-link" href="./eror.html"> Comming Soon  </a></li>
             </ul>
         </li>
         <li class="nav-item">
             <a class="nav-link position-relative" href="#">Thương hiệu</a>
             <ul class="sub-menu bg-light">
-                <li><a class="nav-link" href=""> Calvin Klein</a></li>
-                <li><a class="nav-link" href=""> CHANEL </a></li>
-                <li><a class="nav-link" href=""> DIOR </a></li>
-                <li><a class="nav-link" href=""> LACÔME  </a></li>
-                <li><a class="nav-link" href=""> GUCCI   </a></li>
-                <li><a class="nav-link" href=""> MUGLER  </a></li>
+                <li><a class="nav-link" data-brand = 'marcjacobs'  href="./shop-brand.html">MARC JACOBS</a></li>
+                <li><a class="nav-link" data-brand = 'armani' href="./shop-brand.html">ARMANI </a></li>
+                <li><a class="nav-link" data-brand = 'pacorabanne' href="./shop-brand.html">PACO RABANNE</a></li>
+                <li><a class="nav-link" data-brand = 'jeanpaulgaultier' href="./shop-brand.html">JEAN PAUL GAULTIER  </a></li>
+                <li><a class="nav-link" data-brand = 'hugoboss' href="./shop-brand.html">HUGO BOSS   </a></li>
+                <li><a class="nav-link" data-brand = 'dior' href="./shop-brand.html">DIOR </a></li>
             </ul>
         </li>
         <li class="nav-item">
@@ -167,3 +167,13 @@ modalContainer.addEventListener("click", (e) => {
 modal.addEventListener("click", () => {
     modal.classList.remove("open");
 });
+
+// set brand
+brands = document.querySelectorAll('[data-brand]');
+console.log(brands);
+for (const brand of brands) {
+    brand.addEventListener("click", () => {
+        localStorage.setItem("brand", brand.getAttribute("data-brand"));
+        console.log(localStorage.getItem("brand"));
+    });
+}

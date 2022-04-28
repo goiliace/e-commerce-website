@@ -71,16 +71,16 @@ $(document).ready(function() {
     var PATH = `../assets/js/data/${$('#shop').attr('data-path')}.json`;
     localStorage.setItem('path', PATH);
     $.getJSON(PATH, function(data) {
-        var n = Math.floor(data.length / 4);
-        N = Math.round(data.length / n);
+        var n = Math.floor(data.length / 16) + 1;
+        console.log(n);
         console.log(localStorage.getItem('data-page'));
         var page = 'page-1';
         var pages = {
             'page-1': ""
         }
-        for (var i = 0; i < N; i++) {
+        for (var i = 0; i < n; i++) {
             let num = i + 1
-            pages['page-' + num.toString()] = data.slice(n * i, n * num)
+            pages['page-' + num.toString()] = data.slice(i * 16, (i + 1) * 16)
             $('.pagination').append('<li class="page-item" data-page="page-' + num.toString() + '"><a class="page-link" href="#shop" >' + num.toString() + '</a></li>')
         }
         $(`.pagination .page-item[data-page='${page}']`).addClass('active')
