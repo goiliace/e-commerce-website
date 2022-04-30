@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-
     function add_product(item) {
         $('.shop_product').append(
             `<div class="col-xl-3 col-lg-4 col-md-6 col-xm-12 mt-5" data-aos="${item['data-aos']}" data-aos-duration="1000"> ` +

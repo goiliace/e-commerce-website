@@ -11,7 +11,9 @@ $(document).ready(function() {
     fixHeight('#myVideo', 0.5625);
 
     fixHeight('.owl-item .blog_img', 1)
-    $.getJSON("../assets/js/data/women.json", function(data) {
+    var PATH = `../assets/js/data/all.json`;
+    localStorage.setItem('path', PATH);
+    $.getJSON(PATH, function(data) {
         $('.card-product').each(function(index) {
             if (data[index]) {
                 $(this).html(
