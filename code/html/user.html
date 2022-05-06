@@ -106,15 +106,20 @@
                 </div>
             </div>
             <div class="user_setting mt-4">
-
                 <div class="row user_setting__content">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="user_setting__content__item blue_light" data-target="#user-update-modal" data-toggle="modal" id="user-updateInfo">
                             <img src="../assets/img/user/setting.PNG" alt="">
                             <div class="user_setting__content__item__title">Cập nhập thông tin</div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+                        <div class="user_setting__content__item yellow_light" id="user-pass-update" data-toggle="modal" data-target="#user-update-pass-modal">
+                            <img src="../assets/img/user/key.PNG" alt="">
+                            <div class="user_setting__content__item__title">Đổi mật khẩu</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
                         <div class="user_setting__content__item green_light" id="log-out">
                             <img src="../assets/img/user/logout.PNG" alt="">
                             <div class="user_setting__content__item__title">Thoát tài khoản</div>
@@ -136,25 +141,61 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="user-name">Họ và tên</label>
-                            <input type="text" class="form-control" id="user-update-name" value="">
+                            <label for="user-update-name">Họ và tên</label>
+                            <input type="text" class="form-control" id="user-update-name" value="" placeholder="Chưa cập nhập">
+                            <p class="d-none text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <label for="user-phone">Số điện thoại</label>
-                            <input type="text" class="form-control" id="user-update-phone" value="">
+                            <label for="user-update-phone">Số điện thoại</label>
+                            <input type="text" class="form-control" id="user-update-phone" value="" placeholder="Chưa cập nhập">
+                            <p class="d-none text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <label for="user-email">Email</label>
-                            <input type="text" class="form-control" id="user-update-email" value="">
+                            <label for="user-update-email">Email</label>
+                            <input type="text" class="form-control" id="user-update-email" value="" placeholder="Chưa cập nhập">
+                            <p class="d-none text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <label for="user-address">Địa chỉ</label>
+                            <label for="user-update-address">Địa chỉ</label>
                             <input type="text" class="form-control" id="user-update-address" value="" placeholder="Chưa cập nhập">
+                            <p class="d-none text-danger"></p>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn" id="done-update" data-dismiss="modal">Xong</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="user-update-pass-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Chỉnh sửa thông tin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">\
+                            <label for="old-pass">Nhập mật khẩu cũ</label>
+                            <input type="password" class="form-control" id="old-pass" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-pass">Nhập mật khẩu mới</label>
+                            <input type="password" class="form-control" id="new-pass" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="re-pass">Nhập lại mật khẩu</label>
+                            <input type="password" class="form-control" id="re-pass" value="">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" id="done-pass-update">Xong</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>

@@ -9,15 +9,18 @@ function reset() {
 }
 // localStorage.removeItem('user');
 $(document).ready(function() {
-    var user = [{
-        id: 0,
-        name: 'Cao Nguyen Gia Hung',
-        email: '20089711.hung@student.iuh.edu.vn',
-        phone: '0347825051',
-        password: '1'
-    }]
+    var user = [];
     if (localStorage.getItem('user')) {
         user = user.concat(JSON.parse(localStorage.getItem('user')));
+    } else {
+        user = [{
+            id: 0,
+            name: 'Cao Nguyen Gia Hung',
+            email: '20089711.hung@student.iuh.edu.vn',
+            phone: '0347825051',
+            password: '1'
+        }]
+        localStorage.setItem('user', JSON.stringify(user));
     }
     $('#signIn').click(function() {
         $('.container').removeClass("right-panel-active");
@@ -31,18 +34,19 @@ $(document).ready(function() {
         if ($("#name-signup").val().length < 3) {
             $('#f-name').removeClass("d-none");
             $('#f-name-2').addClass("d-none");
-            $('#name-signup').focus();
+            $('#name-signup').addClass("border-danger");
             return false;
         } else {
             $('#f-name-2').removeClass("d-none");
             if (reg.test($("#name-signup").val())) {
                 $('#t-name').removeClass("d-none");
                 $('#f-name').addClass("d-none");
+                $('#name-signup').removeClass("border-danger");
                 return true;
             } else {
                 $('#f-name').removeClass("d-none");
                 $('#t-name').addClass("d-none");
-                $('#name-signup').focus();
+                $('#name-signup').addClass("border-danger");
                 return false;
             }
         }
@@ -50,28 +54,52 @@ $(document).ready(function() {
 
     function checkEmail() {
         var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        const check = user.find(function(item) {
+            return item.email == $("#email-signup").val()
+        })
+        if (check) {
+            $('#f-email span').html("Email đã tồn tại");
+            $('#f-email').removeClass("d-none");
+            $('#t-email').addClass("d-none");
+            $('#email-signup').addClass("border-danger");
+            return false;
+        }
         if (reg.test($("#email-signup").val())) {
             $('#f-email').addClass("d-none");
             $('#t-email').removeClass("d-none");
+            $("#email-signup").removeClass("border-danger");
             return true;
         } else {
+            $('#f-email span').html("Email không đúng định dạng");
             $('#f-email').removeClass("d-none");
             $('#t-email').addClass("d-none");
-            $('#email-signup').focus();
+            $('#email-signup').addClass("border-danger");
             return false;
         }
     }
 
     function checkPhone() {
+        const check = user.find(function(item) {
+            return item.phone == $("#phone-signup").val()
+        })
+        if (check) {
+            $('#f-phone span').html("Số điện thoại đã tồn tại");
+            $('#f-phone').removeClass("d-none");
+            $('#t-phone').addClass("d-none");
+            $('#phone-signup').addClass("border-danger");
+            return false;
+        }
         var reg = /^[0-9]{10}$/;
         if (reg.test($("#phone-signup").val())) {
             $('#f-phone').addClass("d-none");
             $('#t-phone').removeClass("d-none");
+            $("#phone-signup").removeClass("border-danger");
             return true;
         } else {
+            $('#f-phone span').html("Số điện thoại không đúng định dạng");
             $('#f-phone').removeClass("d-none");
             $('#t-phone').addClass("d-none");
-            $('#phone-signup').focus();
+            $('#phone-signup').addClass("border-danger");
             return false;
         }
     }
@@ -84,6 +112,7 @@ $(document).ready(function() {
             $('#f-pass').addClass("d-none");
             $('#t-Spass').removeClass("d-none");
             $('#t-Mpass').addClass("d-none");
+            $("#password-signup").removeClass("border-danger");
             return true;
         }
         //medium
@@ -91,6 +120,7 @@ $(document).ready(function() {
             $('#f-pass').addClass("d-none");
             $('#t-Mpass').removeClass("d-none");
             $('#t-Spass').addClass("d-none");
+            $("#password-signup").removeClass("border-danger");
             return true;
         }
         //weak
@@ -98,7 +128,7 @@ $(document).ready(function() {
             $('#f-pass').removeClass("d-none");
             $('#t-Spass').addClass("d-none");
             $('#t-Mpass').addClass("d-none");
-            $('#password-signup').focus();
+            $('#password-signup').addClass("border-danger");
             return false;
         }
     }
@@ -107,11 +137,12 @@ $(document).ready(function() {
         if ($("#password-signup").val() == $("#confirm-password-signup").val() && $("#confirm-password-signup").val().trim() != '') {
             $('#f-repass').addClass("d-none");
             $('#t-repass').removeClass("d-none");
+            $("#confirm-password-signup").removeClass("border-danger");
             return true;
         } else {
             $('#f-repass').removeClass("d-none");
             $('#t-repass').addClass("d-none");
-            // $('#confirm-password-signup').focus();
+            // $('#confirm-password-signup').addClass("border-danger");
             return false;
         }
     }

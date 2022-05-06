@@ -1,6 +1,6 @@
 $(document).ready(function() {
     function add_product(item) {
-        $('.shop_product').append(
+        $('#shop_product').append(
             `<div class="col-xl-3 col-lg-4 col-md-6 col-xm-12 mt-5" data-aos="${item['data-aos']}" data-aos-duration="1000"> ` +
             '<div class="item" >' +
             `<a href="./product.html" data-id = "${item.id}" class="link-product">` +
@@ -32,10 +32,10 @@ $(document).ready(function() {
     }
 
     function empty_product() {
-        if (!$('.shop_product').is(':empty')) {
+        if (!$('#shop_product').is(':empty')) {
             $('.not-found').addClass('d-none')
         }
-        if ($('.shop_product').is(':empty')) {
+        if ($('#shop_product').is(':empty')) {
             $('.not-found').removeClass('d-none')
         }
     }
@@ -90,7 +90,7 @@ $(document).ready(function() {
             var brand = $(this).attr('data-brand');
             console.log(brand);
             console.log(1);
-            $('.shop_product').html('');
+            $('#shop_product').html('');
             pages[page].map(function(item) {
                 if ((item.brand.toLowerCase().indexOf(brand.toLowerCase())) != -1) {
                     add_product(item)
@@ -99,12 +99,12 @@ $(document).ready(function() {
         });
         pages[page].map(add_product)
         $('#filter-product__all').click(function() {
-            $('.shop_product').empty();
+            $('#shop_product').empty();
             pages[page].map(add_product)
             go_product()
         });
         $('#filter-product__5').click(function() {
-            $('.shop_product').empty();
+            $('#shop_product').empty();
             pages[page].map(function(item) {
                 if (item.price < 500000) {
                     add_product(item)
@@ -114,7 +114,7 @@ $(document).ready(function() {
             empty_product()
         });
         $('#filter-product__10').click(function() {
-            $('.shop_product').empty();
+            $('#shop_product').empty();
             pages[page].map(function(item) {
                 if (item.price >= 500000 && item.price < 1000000) {
                     add_product(item)
@@ -125,7 +125,7 @@ $(document).ready(function() {
 
         });
         $('#filter-product__20').click(function() {
-            $('.shop_product').empty();
+            $('#shop_product').empty();
             pages[page].map(function(item) {
                 if (item.price >= 1000000 && item.price < 2000000) {
                     add_product(item)
@@ -135,7 +135,7 @@ $(document).ready(function() {
             empty_product()
         });
         $('#filter-product__50').click(function() {
-            $('.shop_product').empty();
+            $('#shop_product').empty();
             pages[page].map(function(item) {
                 if (item.price >= 2000000 && item.price < 3000000) {
                     add_product(item)
@@ -145,7 +145,7 @@ $(document).ready(function() {
             empty_product()
         });
         $('#filter-product__100').click(function() {
-            $('.shop_product').empty();
+            $('#shop_product').empty();
             pages[page].map(function(item) {
                 if (item.price >= 3000000) {
                     add_product(item)
@@ -155,7 +155,7 @@ $(document).ready(function() {
             empty_product()
         });
         $('.page-item').on('click', function() {
-            $('.shop_product').empty();
+            $('#shop_product').empty();
             $('.page-item').removeClass('active')
             $(this).addClass('active')
             page = $(this).attr('data-page')
@@ -166,7 +166,7 @@ $(document).ready(function() {
                 var brand = $(this).attr('data-brand');
                 console.log(brand);
                 console.log(1);
-                $('.shop_product').html('');
+                $('#shop_product').html('');
                 pages[page].map(function(item) {
                     if ((item.brand.toLowerCase().indexOf(brand.toLowerCase())) != -1) {
                         add_product(item)
@@ -176,7 +176,7 @@ $(document).ready(function() {
         });
         $('#shop-search__input').on('keypress', function(e) {
             if (e.which == 13) {
-                $('.shop_product').empty();
+                $('#shop_product').empty();
 
                 data.map(function(item) {
                     if ((item.title.toLowerCase().indexOf($('#shop-search__input').val().toLowerCase()) != -1) || (item.brand.toLowerCase().indexOf($('#shop-search__input').val().toLowerCase()) != -1)) {
@@ -185,7 +185,7 @@ $(document).ready(function() {
                         }
                         add_product(item)
                     }
-                    if ($('.shop_product').is(':empty')) {
+                    if ($('#shop_product').is(':empty')) {
                         $('.not-found').removeClass('d-none')
                     }
                 })

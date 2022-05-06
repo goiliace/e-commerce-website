@@ -56,7 +56,6 @@ $(document).ready(function() {
             )
         })
         totalPrice();
-
     }
     $('.product_remove').click(function() {
         $(this).parent().parent().remove()

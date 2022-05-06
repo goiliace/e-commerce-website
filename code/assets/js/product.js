@@ -16,16 +16,12 @@ $(document).ready(function() {
         var qty = $('#qty').val()
         var name = $('.product_info__name').text()
         var price = $('.product_info__price').text()
-            // var brand = $('.product_info__brand').text()
-            // var type = $('.product_info__type').text()
         var img = $('#product-img img').attr('src')
         var data = {
             id: id,
             qty: qty,
             name: name,
             price: price,
-            // brand: brand,
-            // type: type,
             img: img
         }
         var cart = JSON.parse(localStorage.getItem('cart'))
